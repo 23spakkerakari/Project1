@@ -15,20 +15,20 @@ public class Calculator {
 				+ "You can +, -, *, /, find the square root (enter sqrt),"
 				+ "or find the square (enter 2) ");
 		String operation = sc.next();
-		if(operation=="+") {
+		if(operation.equals("+")) {
 			System.out.println(number + number2);
-		}else if (operation=="-") {
+		}else if (operation.equals("-")) {
 			System.out.println(number - number2);
-		}else if (operation=="*") {
+		}else if (operation.equals("*")) {
 			System.out.println(number * number2);
-		}else if (operation=="/") {
+		}else if (operation.equals("/")) {
 			System.out.println(number/number2);
 		}else if (operation.equalsIgnoreCase("sqrt")) {
 			double sqrt = Math.sqrt(number);
 			double sqrt2 = Math.sqrt(number2);
 			System.out.println(sqrt);
 			System.out.println(sqrt2);
-		}else if (operation=="2") {
+		}else if (operation.equals("2")) {
 			System.out.println(number*number);
 			
 		}
